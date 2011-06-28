@@ -1,8 +1,8 @@
 Description:
-    Explain the generator
+    TODO: Explain the generator
 
 Example:
-    rails generate html5_boilerplate_asset_pack Thing
+    rails generate html5_boilerplate_asset_pack
 
     This will create:
-        what/will/it/create
+        TODO: document generator usage

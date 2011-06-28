@@ -1,17 +1,31 @@
 == Rails 3.1 asset pack for html5_boilerplate
 
-* see http://html5boilerplate.com/
-* supporting v1 of html5boilerplate with following changes
-  * jQuery 1.6.1 (ships with rails)
-  * modernizer 2.0.6
+* see http://html5boilerplate.com
+* supporting version 1 of html5boilerplate with following changes
+  * jQuery 1.6.1 (ships with rails 3.1, still from google cdn)
+  * modernizer 2.0.6 loading from cdnjs.cloudflare.com
 
 NOTE: there have been many changes to html5-boilerplate since version 1, you can get more recent
 versions of the code at https://github.com/paulirish/html5-boilerplate
 this gem uses version 1 as it is a stable release.
 
+== Disclaimers
+
+Run this on a fresh rails 3.1 app, you might not like what it does to your app, so check first :)
+
+== Install
+
+Add to your Gemfile
+
+    gem 'html5_boilerplate_asset_pack', :git => 'git://github.com/house9/html5_boilerplate_asset_pack.git'
+    
+Run the generator
+
+    rails generate html5_boilerplate_asset_pack
+
 == License
 
-Paul Irish released the javascript code with the {The Unlicense}[http://unlicense.org/] (aka: public domain),
+Paul Irish released the html5-boilerplate with the The Unlicense (aka: public domain) http://unlicense.org,
 so this gem is also released with the same license.
 
 

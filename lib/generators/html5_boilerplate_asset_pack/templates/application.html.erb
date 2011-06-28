@@ -17,7 +17,8 @@
 
     <%= stylesheet_link_tag "application" %>
     <%= csrf_meta_tags %>
-    <script src="/assets/modernizr.js"></script>  <!-- http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+    <script>window.Modernizr || document.write("<script src='/assets/modernizr.js'>\x3C/script>");</script>    
   </head>
   <body>
 

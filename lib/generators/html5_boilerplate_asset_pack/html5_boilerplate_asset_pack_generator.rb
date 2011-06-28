@@ -3,9 +3,9 @@ class Html5BoilerplateAssetPackGenerator < Rails::Generators::Base
   
   def manifest
     copy_application_layout
-    install_javascript_safe_logger
     update_application_js
     update_application_css
+    install_javascript_safe_logger    
     copy_google_analytics_initializer
     copy_shared_partial_google_analytics
     copy_shared_partial_dd_belatedpng
@@ -23,8 +23,8 @@ class Html5BoilerplateAssetPackGenerator < Rails::Generators::Base
   
   def update_application_js
     app_js = 'app/assets/javascripts/application.js'
-    gsub_file app_js, /\/\/= require jquery_ujs/, '\/\/ *cdn* require jquery_ujs'        
-    gsub_file app_js, /\/\/= require jquery/, '\/\/ *cdn* require jquery'
+    gsub_file app_js, /\/\/= require jquery_ujs/, '// no require for jquery_ujs, using script tag'
+    gsub_file app_js, /\/\/= require jquery/, '// no require for jquery, using script tag (cdn)'
   end
   
   def update_application_css

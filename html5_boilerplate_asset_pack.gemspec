@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Html5BoilerplateAssetPack::VERSION
   s.authors     = ["Jesse House"]
   s.email       = ["jesse.house@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/house9/html5_boilerplate_asset_pack"
   s.summary     = %q{
     Rails 3.1 asset gem for Paul Irish html5-boilerplate (http://html5boilerplate.com/) version 1
   }
