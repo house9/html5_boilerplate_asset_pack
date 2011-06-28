@@ -8,7 +8,9 @@ Gem::Specification.new do |s|
   s.authors     = ["Jesse House"]
   s.email       = ["jesse.house@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
+  s.summary     = %q{
+    Rails 3.1 asset gem for Paul Irish html5-boilerplate (http://html5boilerplate.com/) version 1
+  }
   s.description = File.open('README.rdoc') { |f| f.read }
 
   s.rubyforge_project = "html5_boilerplate_asset_pack"

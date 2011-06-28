@@ -1,9 +1,13 @@
 == Rails 3.1 asset pack for html5_boilerplate
 
 * see http://html5boilerplate.com/
-* supporting v1
+* supporting v1 of html5boilerplate with following changes
+  * jQuery 1.6.1 (ships with rails)
+  * modernizer 2.0.6
 
-xxxxxxxxxxx
+NOTE: there have been many changes to html5-boilerplate since version 1, you can get more recent
+versions of the code at https://github.com/paulirish/html5-boilerplate
+this gem uses version 1 as it is a stable release.
 
 == License
 

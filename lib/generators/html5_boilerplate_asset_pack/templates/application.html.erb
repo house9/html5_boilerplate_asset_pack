@@ -7,13 +7,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title><!-- TODO:enter title --></title>
+    <title><!-- TODO: enter layout title --></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- TODO: uncomment and add png or remove --><!-- link rel="apple-touch-icon" href="/apple-touch-icon.png" -->
 
     <%= stylesheet_link_tag "application" %>
     <%= csrf_meta_tags %>
@@ -33,26 +33,13 @@
       </footer>
     </div> <!-- eo #container -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/<%= "#{Jquery::Rails::JQUERY_VERSION}" %>/jquery.js"></script>
     <script>window.jQuery || document.write("<script src='/assets/jquery.js'>\x3C/script>")</script>
 
     <%= javascript_include_tag "jquery_ujs" %><!-- not on cdn yet -->
     <%= javascript_include_tag "application" %>
 
-    <!-- TODO: partial shared/_dd_belatedpng -->
-    <!--[if lt IE 7 ]>
-      <script src="/assets/dd_belatedpng.js"></script>
-      <script>DD_belatedPNG.fix("img, .png_bg");</script>
-    <![endif]-->
-
-    <!-- TODO: partial 'shared/_ga' -->
-    <!-- with check for object Google::Analytics.site_id -->
-    <script>
-      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID 
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-      s.parentNode.insertBefore(g,s)}(document,"script"));
-    </script>
-
+    <%= render :partial => "shared/dd_belatedpng" %>
+    <%= render :partial => "shared/google_analytics" %>
   </body>
 </html>
