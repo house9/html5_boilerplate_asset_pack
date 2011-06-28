@@ -23,8 +23,8 @@ class Html5BoilerplateAssetPackGenerator < Rails::Generators::Base
   
   def update_application_js
     app_js = 'app/assets/javascripts/application.js'
-    gsub_file app_js, /\/\/= require jquery_ujs/, ''        
-    gsub_file app_js, /\/\/= require jquery/, ''
+    gsub_file app_js, /\/\/= require jquery_ujs/, '\/\/ *cdn* require jquery_ujs'        
+    gsub_file app_js, /\/\/= require jquery/, '\/\/ *cdn* require jquery'
   end
   
   def update_application_css
