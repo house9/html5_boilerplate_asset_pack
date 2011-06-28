@@ -1,0 +1,14 @@
+== Rails 3.1 asset pack for html5_boilerplate
+
+* see http://html5boilerplate.com/
+* supporting v1
+
+xxxxxxxxxxx
+
+== License
+
+Paul Irish released the javascript code with the {The Unlicense}[http://unlicense.org/] (aka: public domain),
+so this gem is also released with the same license.
+
+
+
