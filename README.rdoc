@@ -13,6 +13,12 @@ this gem uses version 1 as it is a stable release.
 
 Run this on a fresh rails 3.1 app, you might not like what it does to your app, so check first :)
 
+Made this for personal use, as a learning tool for creating gems and generators
+you are welcome to use, change, etc... but you might also be interested in 
+
+* https://github.com/russfrisch/h5bp-rails
+* https://github.com/sporkd/compass-html5-boilerplate
+
 == Install
 
 Add to your Gemfile
