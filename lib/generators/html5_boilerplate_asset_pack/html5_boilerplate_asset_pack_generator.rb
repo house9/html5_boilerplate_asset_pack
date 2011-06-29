@@ -9,6 +9,8 @@ class Html5BoilerplateAssetPackGenerator < Rails::Generators::Base
     copy_google_analytics_initializer
     copy_shared_partial_google_analytics
     copy_shared_partial_dd_belatedpng
+    copy_crossdomain_xml
+    copy_humans_txt
   end
   
   private 
@@ -42,5 +44,13 @@ class Html5BoilerplateAssetPackGenerator < Rails::Generators::Base
   
   def copy_shared_partial_dd_belatedpng
     copy_file '_dd_belatedpng.html.erb', 'app/views/shared/_dd_belatedpng.html.erb'        
+  end
+  
+  def copy_crossdomain_xml
+    copy_file 'crossdomain.xml', 'public/crossdomain.xml'            
+  end
+  
+  def copy_humans_txt
+    copy_file 'humans.txt', 'public/humans.txt'
   end
 end
